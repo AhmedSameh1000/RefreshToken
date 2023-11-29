@@ -1,0 +1,35 @@
+<div class="mt-5">
+  <div class="login-form">
+    <h2>login</h2>
+    <form method="post">
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input
+          [(ngModel)]="Email"
+          type="text"
+          class="form-control"
+          id="Email"
+          required
+          name="Email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          [(ngModel)]="Password"
+          class="form-control"
+          type="password"
+          id="password"
+          name="Password"
+          required
+        />
+      </div>
+      <div class="w-100">
+        <button (click)="logIn()" class="w-100 btn btn-primary" type="submit">
+          login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
